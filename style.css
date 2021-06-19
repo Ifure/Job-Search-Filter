@@ -22,6 +22,11 @@ body{
 header{
     background-color: var(--Desaturated-Dark-Cyan);
 }
+
+.mobile-image{
+    display: none;
+}
+
 header svg{
     max-width: 100%;
 }
@@ -42,7 +47,7 @@ main{
 
 .listing-card{
     width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: #fff;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
     border-radius: 5px;
@@ -124,7 +129,7 @@ main{
 .right-side{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    /* justify-content: ce; */
 }
 
 .right-side > div {
@@ -133,7 +138,9 @@ main{
     background-color: var(--Light-Grayish-Cyan);
     margin-right: 10px;
     font-weight: 700;
+    /* display: flex; */
 }
+
 
 
   /* active states */
@@ -147,4 +154,61 @@ main{
     cursor: pointer;
     color: #fff;
     background-color: var(--Desaturated-Dark-Cyan);
-} 
+}
+
+@media (max-width: 500px) {
+    
+    .mobile-image{
+        display: block;
+    }
+
+    .desktop-image {
+        display: none;
+    }
+
+    .container{
+        max-width: 300px;
+    }
+
+    .listing-card{
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 60px;
+        /* width: 100%; */
+        /* border: 1px solid red; */
+    }
+
+    .listing-card2{
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    .left-side{
+        flex-direction: column;
+    }
+
+    .left-side .logo {
+        position: absolute;
+        top: -70px;
+        left: 20px;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .left-side .profile-top{
+       margin-top: 25px;
+    }
+
+    .right-side{
+        display: flex;
+        border-top: 1px solid var(--Dark-Grayish-Cyan);
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .right-side > div {
+        margin: 15px 10px;
+    }
+
+}
