@@ -156,7 +156,7 @@ main{
     background-color: var(--Desaturated-Dark-Cyan);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     
     .mobile-image{
         display: block;
@@ -208,7 +208,7 @@ main{
     }
 
     .right-side > div {
-        margin: 15px 10px 5px 3px ;
+        margin: 15px 10px  ;
     }
 
 }
